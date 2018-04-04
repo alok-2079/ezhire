@@ -6,36 +6,56 @@
 <ul class="am-mega-menu am-mega-menu-fixed am-mega-menu-response-to-icons am-mega-menu-anim-scale">
   <li>
     <a routerLink="/">
-      <i class="fa fa-single fa-home"></i>
+      My Dashboard
     </a>
   </li>
   <li aria-haspopup="true">
     <a routerLink="/ezhire">
-      <i class="fa fa-star"></i>Ezhire</a>
+      <i></i>Ezhire</a>
     <div class="grid-container3">
       <ul>
         <li>
           <a [routerLink]="['/ezhire/pipeline']">
-            <i class="fa fa-globe"></i>Pipeline</a>
+            <i></i>Pipeline</a>
         </li>
         <li>
           <a routerLink="/">
-            <i class="fa fa-group"></i>Requirements</a>
+            <i></i>Requirements</a>
         </li>
         <li>
           <a routerLink="/">
-            <i class="fa fa-group"></i>Candidates</a>
+            <i></i>Candidates</a>
         </li>
       </ul>
     </div>
   </li>
   <li aria-haspopup="true">
     <a routerLink="/">
-      <i class="fa fa-star"></i>HRMS+</a>
+      <i></i>HRMS+</a>
+    <div class="grid-container3">
+      <ul>
+        <li>
+          <a routerLink="/">
+            <i></i>Employees</a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i></i>Org Hierarchy</a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i></i>Expense</a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i></i>HRMS Admin</a>
+        </li>
+      </ul>
+    </div>
   </li>
   <li aria-haspopup="true">
     <a routerLink="/">
-      <i class="fa fa-star"></i>Expense</a>
+      <i></i>Expense</a>
     <div class="grid-container3">
       <ul>
         <li>
@@ -44,13 +64,82 @@
         </li>
         <li>
           <a routerLink="/">
-            <i class="fa fa-group"></i>Expense Reports</a>
+            <i></i>Expense Reports</a>
         </li>
         <li>
           <a routerLink="/">
-            <i class="fa fa-group"></i>Consolidated Reports</a>
+            <i></i>Consolidated Reports</a>
         </li>
       </ul>
     </div>
+  </li>
+  <li aria-haspopup="true">
+    <a routerLink="/">
+      <i></i>TimeTracker</a>
+  </li>
+  <li aria-haspopup="true">
+    <a routerLink="/">
+      <i></i>RPM</a>
+  </li>
+  <li aria-haspopup="true">
+    <a routerLink="/">
+      <i></i>Admin</a>
+    <div class="grid-container3">
+      <ul>
+        <li>
+          <a routerLink="/">
+            <i class="fa fa-globe"></i>Manage Roles</a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i></i>Manage Resources</a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i></i>Manage API Access</a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i></i>Pending Emails</a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i></i>Manage Adhoc Reports</a>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li aria-haspopup="true">
+    <a routerLink="/">
+      <i></i>PPM</a>
+  </li>
+  <li aria-haspopup="true">
+    <a routerLink="/">
+      <i></i>BSM</a>
+  </li>
+
+  <li aria-haspopup="true" class="pull-right" [routerLinkActive]="['active']">
+    <a routerLink="/login">
+      <i class="fa fa-user"></i>
+    </a>
+    <div class="grid-container3">
+      <ul>
+        <li>
+          <a routerLink="/">
+            <i class="fa fa-user"></i>Jhon</a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i></i>View Roles</a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i class="fa fa-sign-out"></i>Log-out</a>
+        </li>
+
+      </ul>
+    </div>
+
+
   </li>
 </ul>

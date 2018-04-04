@@ -1,0 +1,18 @@
+.parent-table{
+    background: rgba(255,255,255,0.9);
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.3);
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    overflow: hidden;
+    line-height: 5;
+    padding:20px;
+}
+
+.selectRowAction select{
+    width: 100px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 2px 2px 2px 2px;
+    border: none;
+    background: transparent url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat 60px center;
+}

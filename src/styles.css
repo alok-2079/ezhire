@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+.error-msg{color: #f44336}
+.global-search{width: 23% !important;}
+.pad-top15{padding-top: 15px;}
+.cur-poi{cursor: pointer;}
