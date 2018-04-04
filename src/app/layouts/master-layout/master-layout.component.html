@@ -1,0 +1,56 @@
+<div class="col-sm-12">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- AM TOP-FIXED menu -->
+<ul class="am-mega-menu am-mega-menu-fixed am-mega-menu-response-to-icons am-mega-menu-anim-scale">
+  <li>
+    <a routerLink="/">
+      <i class="fa fa-single fa-home"></i>
+    </a>
+  </li>
+  <li aria-haspopup="true">
+    <a routerLink="/ezhire">
+      <i class="fa fa-star"></i>Ezhire</a>
+    <div class="grid-container3">
+      <ul>
+        <li>
+          <a [routerLink]="['/ezhire/pipeline']">
+            <i class="fa fa-globe"></i>Pipeline</a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i class="fa fa-group"></i>Requirements</a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i class="fa fa-group"></i>Candidates</a>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li aria-haspopup="true">
+    <a routerLink="/">
+      <i class="fa fa-star"></i>HRMS+</a>
+  </li>
+  <li aria-haspopup="true">
+    <a routerLink="/">
+      <i class="fa fa-star"></i>Expense</a>
+    <div class="grid-container3">
+      <ul>
+        <li>
+          <a routerLink="/">
+            <i class="fa fa-globe"></i>Pending Tasks</a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i class="fa fa-group"></i>Expense Reports</a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i class="fa fa-group"></i>Consolidated Reports</a>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>

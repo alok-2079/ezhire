@@ -1,0 +1,55 @@
+html, body, aside {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding: 100px;
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-size: cover;	
+}
+aside {
+	width: 233px;
+	min-height: 500px;
+}
+aside.right {
+	margin-left: auto;
+}
+a {
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+
+.gradient {
+	background-image:
+	  linear-gradient(
+		to right, 
+		#77E0FF, #42BEFF
+	  );
+  }
+
+.body {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.z-index-99999 {
+	z-index: 99999;
+}
+
+@media screen and (max-width: 1000px) {
+	body {
+		padding: 20px;
+	}
+}
+@media screen and (max-width: 767px) {
+	body {
+		padding: 10px;
+	}
+	aside {
+		width: auto;
+	}
+}
