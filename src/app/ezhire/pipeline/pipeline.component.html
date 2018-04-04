@@ -19,12 +19,19 @@
           </th>
         </ng-container>
         <th>
-          <a (click)="addNewRecord()" class="pull-right">
-            <span role="button">Add New</span>
-          </a>
-          <a (click)="showCustomColPopup()" class="pull-right">
-            <span role="button">Cols</span>
-          </a>
+          <div class="col-md-12 dynamic-actions">
+            <div class="col-md-12 add-record">
+              <a (click)="addNewRecord()" class="pull-right">
+                <span role="button">Add New</span>
+              </a>
+            </div>
+            <div class="col-md-12">
+              <a (click)="showCustomColPopup()" class="pull-right">
+                <span role="button">Cols</span>
+              </a>
+            </div>
+          </div>
+
         </th>
       </tr>
     </ng-template>
