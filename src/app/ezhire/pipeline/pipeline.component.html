@@ -1,4 +1,4 @@
-<div  class="grid-structure col-md-10" >
+<div class="grid-structure col-md-12">
   <p-table #tt [value]="tempItemList" [paginator]="true" [rows]="10">
     <ng-template pTemplate="header">
       <!-- Create headings -->
@@ -21,6 +21,9 @@
         <th>
           <a (click)="addNewRecord()" class="pull-right">
             <span role="button">Add New</span>
+          </a>
+          <a (click)="showCustomColPopup()" class="pull-right">
+            <span role="button">Cols</span>
           </a>
         </th>
       </tr>
@@ -55,15 +58,15 @@
   </p-table>
 </div>
 
-<div class="col-sm-2 dynamic-column">
+<!-- To add columns Dynamically -->
+<!-- <div class="col-sm-2 dynamic-column">
   <h3>Columns</h3>
-  <!-- To add or remove column dynamically from table -->
   <div class="checkbox" *ngFor="let col of headers; let i = index">
     <label *ngIf="col.name !== 'id'">
       <input type="checkbox" [attr.checked]="col.show == true ? 'checked' : null" (change)="dynamicColChange($event, i)">{{col.name | uppercase}}
     </label>
   </div>
-</div>
+</div> -->
 
 
 <p-dialog [(visible)]="displayAddModal" [width]="500" [contentStyle]="{'overflow':'visible'}">
@@ -91,4 +94,14 @@
   </form>
 </p-dialog>
 
-<!-- <p-confirmDialog header="Confirmation" icon="fa fa-question-circle" width="425"></p-confirmDialog> -->
+<p-dialog [(visible)]="displayCustomCols" [width]="500" [contentStyle]="{'overflow':'visible'}">
+  <p-header>
+    Add/Remove Columns
+  </p-header>
+  <!-- To add or remove column dynamically from table -->
+  <div class="checkbox col-sm-3" *ngFor="let col of headers; let i = index">
+    <label *ngIf="col.name !== 'id'">
+      <input type="checkbox" [attr.checked]="col.show == true ? 'checked' : null" (change)="dynamicColChange($event, i)">{{col.name | uppercase}}
+    </label>
+  </div>
+</p-dialog>

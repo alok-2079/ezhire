@@ -12,6 +12,7 @@ export class PipelineComponent implements OnInit {
   tempItemList: any[];
   headers: any[];
   displayAddModal: boolean = false;
+  displayCustomCols: boolean = false;
   addRecordForm: FormGroup;
 
   constructor() { }
@@ -61,7 +62,11 @@ export class PipelineComponent implements OnInit {
       name: new FormControl(null, [Validators.required]),
       address: new FormControl(null, [Validators.required])
     });
-    
+
+  }
+
+  showCustomColPopup() {
+    this.displayCustomCols = true;
   }
 
   dynamicColChange(event, index) {
